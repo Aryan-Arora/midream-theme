@@ -27,6 +27,14 @@
   #Banner-{{ section.id }}::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
+  {%- if section.settings.image == blank and section.settings.image_2 == blank -%}
+    #Banner-{{ section.id }} .banner__media.placeholder {
+      background: linear-gradient(135deg, #0f4c4c 0%, #ec8b6f 100%);
+    }
+    #Banner-{{ section.id }} .banner__media.placeholder .placeholder-svg {
+      display: none;
+    }
+  {%- endif -%}
 {%- endstyle -%}
 
 {%- liquid

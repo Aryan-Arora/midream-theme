@@ -1,21 +1,28 @@
 {
   "sections": {
-    "image_banner": {
+    "hero": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Browse our latest products",
+            "heading": "Recovery, simplified.",
             "heading_size": "h0"
           }
         },
-        "button": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Heated massagers, traction pillows, and fascia tools for everyday relief.</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Shop now",
+            "button_link_1": "shopify://collections/massage-recovery",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -24,30 +31,31 @@
       },
       "block_order": [
         "heading",
-        "button"
+        "text",
+        "buttons"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
         "image_behavior": "none",
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-5",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
-        "show_text_below": false
+        "show_text_below": true
       }
     },
-    "featured_collection": {
+    "featured_collection_primary": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Massage & Recovery",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "all",
+        "collection": "massage-recovery",
         "products_to_show": 8,
         "columns_desktop": 4,
         "color_scheme": "scheme-1",
@@ -56,20 +64,130 @@
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "padding_top": 44,
-        "padding_bottom": 36
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "brand_story": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Every product has one job",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Midream makes recovery simple. Every product is chosen for one job: helping your body recover faster.</p>",
+            "text_style": "body"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our story",
+            "button_link": "shopify://pages",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text",
+        "button"
+      ],
+      "settings": {
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_secondary": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Fitness & Fascia Tools",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fitness-fascia-tools",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "1",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "newsletter": {
+      "type": "newsletter",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Stay in the loop"
+          }
+        },
+        "paragraph": {
+          "type": "paragraph",
+          "settings": {
+            "paragraph": "<p>Recovery tips and new product drops, straight to your inbox.</p>"
+          }
+        },
+        "email_form": {
+          "type": "email_form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "paragraph",
+        "email_form"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 52,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection"
+    "hero",
+    "featured_collection_primary",
+    "brand_story",
+    "featured_collection_secondary",
+    "newsletter"
   ]
 }
