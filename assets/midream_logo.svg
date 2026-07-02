@@ -1,0 +1,15 @@
+<svg width="680" height="240" viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Midream logo</title>
+<desc>A circular mark combining a crescent moon and a soft wave, paired with the wordmark "Midream" in a clean sans-serif, in deep teal and soft coral tones.</desc>
+<style>
+  .word { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 600; }
+  .tag { font-family: 'Helvetica Neue', Arial, sans-serif; font-weight: 400; letter-spacing: 3px; }
+</style>
+
+<circle cx="120" cy="120" r="72" fill="#0f4c4c"/>
+<path d="M 150 70 A 56 56 0 1 0 150 170 A 44 44 0 1 1 150 70 Z" fill="#f4ede4"/>
+<path d="M 78 140 Q 100 122 122 140 Q 144 158 166 140" stroke="#ec8b6f" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+<text x="216" y="138" class="word" font-size="56" fill="#0f4c4c">Midream</text>
+<text x="218" y="168" class="tag" font-size="14" fill="#ec8b6f">RECOVERY &amp; WELLNESS</text>
+</svg>

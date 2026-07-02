@@ -172,7 +172,16 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            <img
+              src="{{ 'midream_logo.svg' | asset_url }}"
+              class="header__heading-logo motion-reduce"
+              height="{{ settings.logo_width | divided_by: 2.83 | round }}"
+              width="{{ settings.logo_width }}"
+              alt="{{ shop.name }}"
+              loading="eager"
+            >
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -215,7 +224,16 @@
             }}
           </div>
         {%- else -%}
-          <span class="h2">{{ shop.name }}</span>
+          <div class="header__heading-logo-wrapper">
+            <img
+              src="{{ 'midream_logo.svg' | asset_url }}"
+              class="header__heading-logo"
+              height="{{ settings.logo_width | divided_by: 2.83 | round }}"
+              width="{{ settings.logo_width }}"
+              alt="{{ shop.name }}"
+              loading="eager"
+            >
+          </div>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
