@@ -114,7 +114,6 @@
     },
     "featured_collection_secondary": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
         "title": "Fitness & Fascia Tools",
         "heading_size": "h2",
@@ -124,7 +123,7 @@
         "collection": "fitness-fascia-tools",
         "products_to_show": 8,
         "columns_desktop": 4,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
@@ -177,8 +176,8 @@
   "order": [
     "hero",
     "featured_collection_primary",
-    "brand_story",
     "featured_collection_secondary",
+    "brand_story",
     "newsletter"
   ]
 }
